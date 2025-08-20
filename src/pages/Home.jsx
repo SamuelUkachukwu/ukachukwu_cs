@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import TransPageWrap from "../components/TransPageWrap";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
@@ -98,28 +99,28 @@ const Home = () => {
           {/* <HeroNav ref={ulRef} /> */}
           <ul className="hero-nav absolute top-[40%] left-[55%] md:left-[52%] z-30 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold md:font-extrabold tracking-widest text-[#0C0C0D] dark:text-[#F2F2F2] animate-fade-in font-['Bebas-Neue']">
             <li>
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 transition duration-400"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/project"
+              <Link
+                to="/project"
                 className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 transition duration-400"
               >
                 Project
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 transition duration-400"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

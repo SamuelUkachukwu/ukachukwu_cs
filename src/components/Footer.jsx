@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const skills = [
@@ -33,70 +34,49 @@ const Footer = () => {
 
           <div className="space-y-2">
             <h3 className="font-semibold text-[16px]">Menu</h3>
-            <ul className="space-y-1">
-              <li>
-                <a
-                  href="#home"
-                  className="transition duration-300 hover:text-red-700"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="transition duration-300 hover:text-red-700"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="transition duration-300 hover:text-red-700"
-                >
-                  About
-                </a>
-              </li>
-            </ul>
+           <ul className="space-y-1">
+  <li>
+    <Link to="/" className="transition duration-300 hover:text-red-700">
+      Home
+    </Link>
+  </li>
+  <li>
+    <Link to="/project" className="transition duration-300 hover:text-red-700">
+      Projects
+    </Link>
+  </li>
+  <li>
+    <Link to="/about" className="transition duration-300 hover:text-red-700">
+      About
+    </Link>
+  </li>
+</ul>
           </div>
 
           <div className="space-y-2">
             <h3 className="font-semibold text-[16px]">Legal</h3>
-            <ul className="space-y-1">
-              <li>
-                <a
-                  href="#sitemap"
-                  className="transition duration-300 hover:text-red-700"
-                >
-                  Sitemap
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#privacy"
-                  className="transition duration-300 hover:text-red-700"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#cookies"
-                  className="transition duration-300 hover:text-red-700"
-                >
-                  Cookie Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#accessibility"
-                  className="transition duration-300 hover:text-red-700"
-                >
-                  Accessibility Statement
-                </a>
-              </li>
-            </ul>
+           <ul className="space-y-1">
+  <li>
+    <Link to="/sitemap" className="transition duration-300 hover:text-red-700">
+      Sitemap
+    </Link>
+  </li>
+  <li>
+    <Link to="/privacy" className="transition duration-300 hover:text-red-700">
+      Privacy Policy
+    </Link>
+  </li>
+  <li>
+    <Link to="/cookies" className="transition duration-300 hover:text-red-700">
+      Cookie Policy
+    </Link>
+  </li>
+  <li>
+    <Link to="/accessibility" className="transition duration-300 hover:text-red-700">
+      Accessibility Statement
+    </Link>
+  </li>
+</ul>
           </div>
 
           <div className="space-y-2 lg:col-span-1 sm:col-span-2">

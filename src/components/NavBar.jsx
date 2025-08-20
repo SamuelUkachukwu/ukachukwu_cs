@@ -1,6 +1,6 @@
 import React, { forwardRef, useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
-import { useLocation, NavLink } from "react-router-dom";
+import { useLocation, NavLink, Link } from "react-router-dom";
 import Menu from "./Menu";
 
 const NavBar = () => {
@@ -42,23 +42,14 @@ const NavBar = () => {
   return (
     <>
       <nav className="flex justify-between py-3 px-6 fixed top-4 z-60 w-full">
-        <a
-          href="/"
-          className="text-xl 
-                    font-bold 
-                    text-[#0C0C0D] 
-                    dark:text-[#F2F2F2] 
-                    text-center                     
-                    flex 
-                    items-center 
-                    justify-center 
-                    leading-none 
-                    ml-2
-                    z-50
-                        "
+        <Link
+          to="/"
+          className="text-xl font-bold text-[#0C0C0D] dark:text-[#F2F2F2] 
+               text-center flex items-center justify-center 
+               leading-none ml-2 z-50"
         >
           SamuelU<span className="text-red-700">k</span>
-        </a>
+        </Link>
         <span className="flex items-center">
           {!isHome ? (
             <>
@@ -109,31 +100,43 @@ export const HeroNav = forwardRef((props, ref) => {
     <div>
       <ul
         ref={ref}
-        className="absolute top-[35%] md:top-[40%] left-[55%] md:left-[52%] z-30 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold md:font-extrabold tracking-widest text-[#0C0C0D] dark:text-[#F2F2F2] animate-fade-in font-['Bebas-Neue']"
+        className="absolute top-[35%] md:top-[40%] left-[55%] md:left-[52%] z-30 
+                   transform -translate-x-1/2 -translate-y-1/2 
+                   text-2xl font-semibold md:font-extrabold tracking-widest 
+                   text-[#0C0C0D] dark:text-[#F2F2F2] animate-fade-in font-['Bebas-Neue']"
       >
         <li>
-          <a
-            href="/about"
-            className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.8)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] transition duration-300"
+          <Link
+            to="/about"
+            className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 
+                       hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.8)] 
+                       dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] 
+                       transition duration-300"
           >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="/project"
-            className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.8)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] transition duration-300"
+          <Link
+            to="/project"
+            className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 
+                       hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.8)] 
+                       dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] 
+                       transition duration-300"
           >
             Project
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            href="/contact"
-            className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.8)] dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] transition duration-300"
+          <Link
+            to="/contact"
+            className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 
+                       hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.8)] 
+                       dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] 
+                       transition duration-300"
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

@@ -33,13 +33,12 @@ const Loader = () => {
   }, [active]);
 
   useEffect(() => {
-    if (!active && progress === 100) {
-      // fade out loader smoothly when loading is complete
+    if (!active && progress === 100 && containerRef.current) {
       gsap.to(containerRef.current, {
         opacity: 0,
         duration: 1,
         ease: "power2.out",
-        onComplete: () => setVisible(false), // remove from DOM after fade
+        onComplete: () => setVisible(false),
       });
     }
   }, [active, progress]);
@@ -126,20 +125,22 @@ const Loader = () => {
     ];
 
     rings.forEach(({ ref, direction, delay }) => {
-      gsap.to(ref.current, {
-        rotation: 360 * direction,
-        duration: 20,
-        ease: "power1.inOut",
-        repeat: -1,
-        yoyo: true,
-        delay,
-        transformOrigin: "50% 50%",
-      });
+      if (ref.current) {
+        gsap.to(ref.current, {
+          rotation: 360 * direction,
+          duration: 20,
+          ease: "power1.inOut",
+          repeat: -1,
+          yoyo: true,
+          delay,
+          transformOrigin: "50% 50%",
+        });
+      }
     });
 
     return () => {
       rings.forEach(({ ref }) => {
-        gsap.killTweensOf(ref.current);
+        if (ref.current) gsap.killTweensOf(ref.current);
       });
     };
   }, [active]);
