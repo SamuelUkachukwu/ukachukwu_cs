@@ -7,7 +7,7 @@ import { useGLTF } from '@react-three/drei'
 
 export function Laptop(props) {
    const laptopRef = useRef();
-  const { nodes, materials } = useGLTF('/laptop_3d_samuel.glb')
+   const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}laptop_3d_samuel.glb`);
   return (
    <group ref={laptopRef} {...props} dispose={null}>
       <mesh

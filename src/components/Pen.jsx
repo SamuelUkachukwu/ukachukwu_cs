@@ -69,7 +69,7 @@ export function Pen(props) {
         };
     }, [viewport.height, viewport.width]);
 
-    const { nodes, materials } = useGLTF("/pen.glb");
+    const { nodes, materials } = useGLTF(`${import.meta.env.BASE_URL}pen.glb`);
     return (
         //this was removed from the group with ref: scale={[0.95, 0.95, 0.95]} no changes detected yet
         <group ref={penRef} {...props} dispose={null}>
