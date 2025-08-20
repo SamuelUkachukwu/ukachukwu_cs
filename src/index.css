@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'GravitasOne-Regular';
+  src: url('/fonts/GravitasOne-Regular.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Bebas-Neue';
+  src: url('/fonts/BebasNeue-Regular.ttf') format('opentype');
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 15px !important;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.card-header-img {
+    background-image: url('./assets/media/profile_pic.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    /* color:#c10007 */
+}
+@media (max-width: 1020px) and (min-width: 768px) {
+  .card-header-img {
+    background-size: 200% 100%;  
+    background-position: left center; 
+  }
+}
