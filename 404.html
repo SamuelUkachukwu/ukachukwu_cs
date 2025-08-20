@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://kit.fontawesome.com/f11f31fa03.js" crossorigin="anonymous"></script>
+    <script>
+        //On page load
+        document.documentElement.classList.toggle(
+            "dark",
+            localStorage.theme === "dark" ||
+            (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        );
+
+        if (performance.getEntriesByType("navigation")[0]?.type === "reload") {
+            scrollTo(0, 0);
+        }
+    </script>
+    <title>SamuekUK</title>
+  <script type="module" crossorigin src="/ukachukwu_cs/assets/index-CIahTmdM.js"></script>
+  <link rel="stylesheet" crossorigin href="/ukachukwu_cs/assets/index-CDwdPE-6.css">
+</head>
+
+<body
+    class="bg-[#F2F2F2] dark:bg-[#0C0C0D] text-[#0C0C0D] dark:text-[#F2F2F2] transition-colors body overflow-x-hidden">
+    <div id="root"></div>
+</body>
+
+</html>
