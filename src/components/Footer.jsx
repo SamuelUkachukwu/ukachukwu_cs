@@ -57,11 +57,6 @@ const Footer = () => {
                         <h3 className="font-semibold text-[16px]">Legal</h3>
                         <ul className="space-y-1">
                             <li>
-                                <Link to="/legal/sitemap" className="transition duration-300 hover:text-red-700">
-                                    Sitemap
-                                </Link>
-                            </li>
-                            <li>
                                 <Link to="/legal/privacy" className="transition duration-300 hover:text-red-700">
                                     Privacy Policy
                                 </Link>
@@ -76,11 +71,7 @@ const Footer = () => {
 
                     <div className="space-y-2 lg:col-span-1 sm:col-span-2">
                         <h3 className="font-semibold text-[16px]">Credits</h3>
-                        <ul className="space-y-1">
-                            <li>Designed</li>
-                            <li>Developed</li>
-                            <li>3D assets by Samuel Ukachukwu</li>
-                        </ul>
+                        <p>Designed, Developed, 3D Blender assets by Samuel Ukachukwu</p>
                     </div>
                 </div>
 

@@ -90,7 +90,7 @@ const About = () => {
   return (
     <>
       <TransPageWrap>
-        <section id="about" className="w-full min-h-screen relative">
+        <main id="about" className="w-full min-h-screen relative">
           {/* background lines are these divs  */}
           <div className="fixed top-[65px] bottom-0 left-[12%] w-px bg-[#0C0C0D] dark:bg-[#F2F2F2] opacity-20">
             <div className="absolute top-[9.2%] left-[-30px] w-6 h-[10%] border-b-[1px] border-r-[1px] border-[#0C0C0D] dark:border-[#F2F2F2] opacity-80" />
@@ -130,7 +130,7 @@ const About = () => {
               <div className="w-[60%] h-[60%] rounded-xl shadow-lg mt-10 md:mt-0 ms-0 md:ms-10 card-header-img -translate-y-8 md:-translate-y-4" />
             </div>
           </div>
-        </section>
+        </main>
       </TransPageWrap>
     </>
   );

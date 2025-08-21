@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import DateToday from "../components/DateToday";
 import Scene from "../components/Scene";
-import { HeroNav } from "../components/NavBar";
 import HeroText from "../components/HeroText";
 
 import gsap from "gsap";
@@ -13,7 +12,6 @@ import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
 const Home = () => {
-  
   useEffect(() => {
     //Scroll page to top and prevent 3D model wrong position
     if ("scrollRestoration" in window.history) {
@@ -61,8 +59,7 @@ const Home = () => {
 
   return (
     <TransPageWrap>
-      <section id="hero" className="w-full h-[200vh] relative overscroll-none">
-        {" "}
+      <main id="hero" className="w-full h-[200vh] relative overscroll-none">
         {/* the small blocks */}
         <div className="fixed top-[65px] bottom-0 left-[12%] w-px bg-[#0C0C0D] dark:bg-[#F2F2F2] opacity-20 z-[2]">
           <div className="absolute top-[9.2%] left-[-30px] w-6 h-[10%] border-b-[1px] border-r-[1px] border-[#0C0C0D] dark:border-[#F2F2F2] opacity-80" />
@@ -100,6 +97,7 @@ const Home = () => {
             <li>
               <Link
                 to="/about"
+                aria-label="About page"
                 className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 transition duration-400"
               >
                 About
@@ -108,6 +106,7 @@ const Home = () => {
             <li>
               <Link
                 to="/project"
+                aria-label="Projects page"
                 className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 transition duration-400"
               >
                 Project
@@ -116,6 +115,7 @@ const Home = () => {
             <li>
               <Link
                 to="/contact"
+                aria-label="Contact page"
                 className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 transition duration-400"
               >
                 Contact
@@ -123,7 +123,7 @@ const Home = () => {
             </li>
           </ul>
         </div>
-      </section>
+      </main>
     </TransPageWrap>
   );
 };

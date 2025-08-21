@@ -28,6 +28,7 @@ const Contact = () => {
     <motion.div
       key={location.pathname}
       className="relative"
+      role="page transition loader"
       initial="initial"
       animate="animate"
       exit="exit"
@@ -51,7 +52,7 @@ const Contact = () => {
       {showContent && (
         <>
           <PenScene />
-          <section id="contact" className="w-full h-screen">
+          <main id="contact" className="w-full h-screen">
             {/* background lines are these divs  */}
             <div className="fixed top-[65px] bottom-0 left-[12%] w-px bg-[#0C0C0D] dark:bg-[#F2F2F2] opacity-20 z-[2]">
               <div className="absolute top-[9.2%] left-[-30px] w-6 h-[10%] border-b-[1px] border-r-[1px] border-[#0C0C0D] dark:border-[#F2F2F2] opacity-80" />
@@ -63,8 +64,8 @@ const Contact = () => {
 
             <div className="z-10 w-[74%] mx-auto  h-screen flex flex-col justify-center items-center relative px-6 text-center -translate-y-10 md:-translate-y-4">
               <p className="text-[2rem] md:text-[4rem] font-['Bebas-Neue'] mb-6 font-light leading-none">
-                Collaborate, Hire, Partner, Connect{" "}
-              </p>{" "}
+                Collaborate, Hire, Partner, Connect
+              </p>
               <p className="mb-4">let's build something remarkable.</p>
               <a
                 href="mailto:shybold.inc@gmail.com"
@@ -73,7 +74,7 @@ const Contact = () => {
                 Let's build it!
               </a>
             </div>
-          </section>
+          </main>
           <Footer />
         </>
       )}

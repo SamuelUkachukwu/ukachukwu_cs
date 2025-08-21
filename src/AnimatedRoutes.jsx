@@ -12,21 +12,23 @@ import ScrollToTop from "./components/ScrollToTop";
 const AnimatedRoutes = () => {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
-       <ScrollToTop />
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<Home />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+    <>
+      <ScrollToTop />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
 
-        {/* legal Routes */}
-        <Route path="/legal/:docType" element={<Legal />} />
+          {/* legal Routes */}
+          <Route path="/legal/:docType" element={<Legal />} />
 
-        {/* 404 Routes */}
-        <Route path="*" element={<NoPage />} />
-      </Routes>
-    </AnimatePresence>
+          {/* 404 Routes */}
+          <Route path="*" element={<NoPage />} />
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 };
 

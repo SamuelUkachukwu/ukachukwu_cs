@@ -21,6 +21,7 @@ const TransPageWrap = ({ children }) => {
     <motion.div
       key={location.pathname}
       className="relative"
+      role="page transition loader"
       initial="initial"
       animate="animate"
       exit="exit"

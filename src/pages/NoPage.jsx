@@ -5,7 +5,7 @@ import Image404 from "../assets/media/404.webp";
 const NoPage = () => {
   return (
     <TransPageWrap>
-      <section
+      <main
         id="contact"
         className="w-full h-screen flex justify-center items-center"
       >
@@ -25,7 +25,7 @@ const NoPage = () => {
             className="h-auto object-contain rounded-[10px]"
           />
         </div>
-      </section>
+      </main>
     </TransPageWrap>
   );
 };

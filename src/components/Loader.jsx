@@ -151,7 +151,8 @@ const Loader = () => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 flex items-center justify-center bg-[#F2F2F2] dark:bg-[#0C0C0D] text-[#0C0C0D] dark:text-[#F2F2F2] overflow-hidden z-50"
+      role="site loader"
+      className="fixed inset-0 flex items-center justify-center bg-[#F2F2F2] dark:bg-[#0C0C0D] text-[#0C0C0D] dark:text-[#F2F2F2] overflow-hidden z-[999]"
     >
       <div className="relative w-[100vmin] h-[100vmin]">
         {/* Rotating Rings */}

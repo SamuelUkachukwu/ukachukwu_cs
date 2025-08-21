@@ -140,7 +140,7 @@ const ProjectImages = ({ imageRefs, textRefs }) => {
               target="_blank"
               rel="noreferrer"
               className="image absolute w-full h-full"
-              aria-label="visit project page (opens in a new tab)"
+              aria-label={`Visit ${data.title} project page (opens in a new tab)`}
             >
               <img
                 src={data.image}
@@ -181,7 +181,7 @@ const ProjectImages = ({ imageRefs, textRefs }) => {
                   href={slide.link}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="visit project page (opens in a new tab)"
+                  aria-label={`Visit ${slide.title} project page (opens in a new tab)`}
                 >
                   <i className="fs-4 fa-solid fa-square-arrow-up-right"></i>
                 </a>
@@ -276,7 +276,7 @@ const Project = () => {
 
   return (
     <TransPageWrap>
-      <section>
+      <main>
         {/* background lines are these divs  */}
         <div className="fixed top-[65px] bottom-0 left-[12%] w-px bg-[#0C0C0D] dark:bg-[#F2F2F2] opacity-20 z-[2]">
           <div className="absolute top-[9.2%] left-[-30px] w-6 h-[10%] border-b-[1px] border-r-[1px] border-[#0C0C0D] dark:border-[#F2F2F2] opacity-80" />
@@ -302,7 +302,7 @@ const Project = () => {
             </div>
           ))}
         </div>
-      </section>
+      </main>
     </TransPageWrap>
   );
 };
