@@ -67,7 +67,7 @@ const Contact = () => {
               </p>{" "}
               <p className="mb-4">let's build something remarkable.</p>
               <a
-                href="mailto:momoo.inc@gmail.com"
+                href="mailto:shybold.inc@gmail.com"
                 className="relative inline-block px-8 py-3 text-lg font-medium border bg-[#0C0C0D] dark:bg-[#F2F2F2] rounded-full transition-all duration-300 hover:bg-red-700 hover:border-red-900 hover:text-[#F2F2F2] text-[#F2F2F2] dark:text-[#0C0C0D]"
               >
                 Let's build it!

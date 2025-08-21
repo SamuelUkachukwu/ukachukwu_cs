@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import DateToday from "../components/DateToday";
 import Scene from "../components/Scene";
 import { HeroNav } from "../components/NavBar";
@@ -13,8 +13,7 @@ import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
 
 const Home = () => {
-  // const ulRef = useRef();
-
+  
   useEffect(() => {
     //Scroll page to top and prevent 3D model wrong position
     if ("scrollRestoration" in window.history) {
@@ -62,7 +61,7 @@ const Home = () => {
 
   return (
     <TransPageWrap>
-      <section id="hero" className="w-full h-[200vh] relative">
+      <section id="hero" className="w-full h-[200vh] relative overscroll-none">
         {" "}
         {/* the small blocks */}
         <div className="fixed top-[65px] bottom-0 left-[12%] w-px bg-[#0C0C0D] dark:bg-[#F2F2F2] opacity-20 z-[2]">
@@ -96,7 +95,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          {/* <HeroNav ref={ulRef} /> */}
+          {/* Removed from component and coded in */}
           <ul className="hero-nav absolute top-[40%] left-[55%] md:left-[52%] z-30 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold md:font-extrabold tracking-widest text-[#0C0C0D] dark:text-[#F2F2F2] animate-fade-in font-['Bebas-Neue']">
             <li>
               <Link

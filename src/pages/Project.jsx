@@ -219,7 +219,7 @@ const Project = () => {
         trigger: containerRef.current,
         start: "top top",
         end: "+=900%",
-        scrub: 2,
+        scrub: 1,
         pin: true,
         snap: {
           snapTo: 1 / (panels.length - 1),

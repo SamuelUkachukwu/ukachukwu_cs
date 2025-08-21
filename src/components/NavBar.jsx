@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import { useLocation, NavLink, Link } from "react-router-dom";
 import Menu from "./Menu";
@@ -94,51 +94,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-export const HeroNav = forwardRef((props, ref) => {
-  return (
-    <div>
-      <ul
-        ref={ref}
-        className="absolute top-[35%] md:top-[40%] left-[55%] md:left-[52%] z-30 
-                   transform -translate-x-1/2 -translate-y-1/2 
-                   text-2xl font-semibold md:font-extrabold tracking-widest 
-                   text-[#0C0C0D] dark:text-[#F2F2F2] animate-fade-in font-['Bebas-Neue']"
-      >
-        <li>
-          <Link
-            to="/about"
-            className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 
-                       hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.8)] 
-                       dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] 
-                       transition duration-300"
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/project"
-            className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 
-                       hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.8)] 
-                       dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] 
-                       transition duration-300"
-          >
-            Project
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 
-                       hover:drop-shadow-[0_0_10px_rgba(190,18,60,0.8)] 
-                       dark:hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] 
-                       transition duration-300"
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </div>
-  );
-});

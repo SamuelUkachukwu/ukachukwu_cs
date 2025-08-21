@@ -19,19 +19,19 @@
 html {
   scroll-behavior: smooth;
   font-size: 15px !important;
-    font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .card-header-img {
-    background-image: url('./assets/media/profile_pic.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    /* color:#c10007 */
+  background-image: url('./assets/media/profile_pic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 @media (max-width: 1020px) and (min-width: 768px) {
   .card-header-img {
-    background-size: 200% 100%;  
-    background-position: left center; 
+    background-size: 200% 100%;
+    background-position: left center;
   }
 }
