@@ -90,6 +90,7 @@ const Home = () => {
                 Capable of creating effective user interfaces and appealing web
                 designs.
               </p>
+              <p className="text-xs leading-relaxed max-w-[60%] lg:max-w-[70%] m-auto md:m-0 text-center pt-30 hidden max-[768px]:block">scroll</p>
             </div>
           </div>
           {/* Removed from component and coded in */}
@@ -109,7 +110,7 @@ const Home = () => {
                 aria-label="Projects page"
                 className="text-[clamp(2rem,3vw,4rem)] hover:text-rose-700 transition duration-400"
               >
-                Project
+                Projects
               </Link>
             </li>
             <li>
