@@ -142,7 +142,7 @@ export default function Menu({ isOpen, setIsOpen }) {
             </li>
             <li>
               <Link to="/project" onClick={() => setIsOpen(false)}>
-                Project
+                Projects
               </Link>
             </li>
             <li>
