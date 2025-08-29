@@ -58,10 +58,9 @@ const Contact = () => {
                             <div className="absolute top-[9.2%] left-[-30px] w-6 h-[10%] border-b-[1px] border-r-[1px] border-[#0C0C0D] dark:border-[#F2F2F2] opacity-80" />
                             <div className="absolute bottom-[5%] md:bottom-[10%] left-2 w-[40vw] h-[10%] border-t-[1px] border-l-[1px] border-[#0C0C0D] dark:border-[#F2F2F2] opacity-80" />
                         </div>
-                        <h1 className='w-[76%] left-1/2 -translate-x-1/2 fixed bottom-[0] p-2 ps-10 font-thin font-["Bebas-Neue"] text-[clamp(4rem,10vw,20rem)] z-10 pointer-events-none leading-none md:translate-y-[12%]'>
+                        <h1 className='w-[76%] left-1/2 -translate-x-1/2 fixed bottom-[0] p-2 ps-10 font-thin font-["Bebas-Neue"] text-[clamp(4rem,10vw,20rem)] z-10 pointer-events-none leading-none md:translate-y-[12%] [mix-blend-mode:difference]'>
                             Contact
                         </h1>
-
                         <div className="z-10 w-[74%] mx-auto  h-screen flex flex-col justify-center items-center relative px-6 text-center -translate-y-10 md:-translate-y-4">
                             <p className="text-[2rem] md:text-[4rem] font-['Bebas-Neue'] mb-6 font-light leading-none">
                                 Collaborate, Hire, Partner, Connect
