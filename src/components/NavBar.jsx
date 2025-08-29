@@ -48,7 +48,7 @@ const NavBar = () => {
                text-center flex items-center justify-center 
                leading-none ml-2 z-50"
         >
-          SamuelU<span className="text-red-700">k</span>
+          Samuel<span className="text-red-700">Uk</span>
         </Link>
         <span className="flex items-center">
           {!isHome ? (
