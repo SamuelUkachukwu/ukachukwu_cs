@@ -18,20 +18,13 @@ gsap.registerPlugin(ScrollTrigger);
 const textData = [
     {
         id: 1,
-        title: "PicknStrum",
-        programs: [
-            "HTML-5",
-            "CSS-3",
-            "Python",
-            "JavaScript",
-            "Django",
-            "Bootstrap",
-        ],
-        link: "https://picknstrum.onrender.com",
-        github: "https://github.com/SamuelUkachukwu/PICKnSTRUM",
+        title: "Lotusforever",
+        programs: ["HTML-5", "CSS-3"],
+        link: "https://samuelukachukwu.github.io/lotusforever-yoga-website/",
+        github: "https://github.com/SamuelUkachukwu/lotusforever-yoga-website",
         content:
-            "PicknStrum is an eCommerce site for stringed instruments and accessories, built to offer customers a smooth, secure, and user-friendly shopping experience.",
-        image: pickNStrumImage,
+            "Lotusforever is a yoga website for users aged 15+, offering guided video sessions that can be streamed at home for a calming, studio-free experience.",
+        image: lotusForeverImage,
         borderColor: "border-[#F2F2F2] dark:border-[#0C0C0D]",
     },
     {
@@ -47,24 +40,6 @@ const textData = [
     },
     {
         id: 3,
-        title: "storyBASE",
-        programs: [
-            "HTML-5",
-            "CSS-3",
-            "Python",
-            "JavaScript",
-            "Django",
-            "Bootstrap",
-        ],
-        link: "https://storybase.onrender.com",
-        github: "https://github.com/SamuelUkachukwu/storyBase",
-        content:
-            "StoryBase is a blogging platform for storytellers to share original works in admin-defined categories. Registered users can post and engage with creative content.",
-        image: storyBaseImage,
-        borderColor: "border-[#F2F2F2] dark:border-[#0C0C0D]",
-    },
-    {
-        id: 4,
         title: "Quiz Me Game",
         programs: ["HTML-5", "CSS-3", "JavaScript"],
         link: "https://samuelukachukwu.github.io/quiz-me/",
@@ -75,18 +50,7 @@ const textData = [
         borderColor: "border-[#D9D9D9] dark:border-[#2A2A2A]",
     },
     {
-        id: 5,
-        title: "Lotusforever",
-        programs: ["HTML-5", "CSS-3"],
-        link: "https://samuelukachukwu.github.io/lotusforever-yoga-website/",
-        github: "https://github.com/SamuelUkachukwu/lotusforever-yoga-website",
-        content:
-            "Lotusforever is a yoga website for users aged 15+, offering guided video sessions that can be streamed at home for a calming, studio-free experience.",
-        image: lotusForeverImage,
-        borderColor: "border-[#F2F2F2] dark:border-[#0C0C0D]",
-    },
-    {
-        id: 6,
+        id: 4,
         title: "Hack Halt",
         programs: [
             "HTML-5",
@@ -104,6 +68,35 @@ const textData = [
         borderColor: "border-[#D9D9D9] dark:border-[#2A2A2A]",
     },
     {
+        id: 5,
+        title: "ABC Real Estate",
+        programs: ["HTML-5", "CSS-3", "JavaScript", "PHP", "Bootstrap, MYSQL"],
+        link: "https://your-abc-realestate-live-link.com",
+        github: "https://github.com/SamuelUkachukwu/abc-realestate",
+        content:
+            "ABC Real Estate is a sleek, responsive site that showcases properties with filtering, testimonials, and intuitive navigation for clients across Ireland.",
+        image: abcRealEstateImage,
+        borderColor: "border-[#D9D9D9] dark:border-[#2A2A2A]",
+    },
+    {
+        id: 6,
+        title: "PicknStrum",
+        programs: [
+            "HTML-5",
+            "CSS-3",
+            "Python",
+            "JavaScript",
+            "Django",
+            "Bootstrap",
+        ],
+        link: "https://picknstrum.onrender.com",
+        github: "https://github.com/SamuelUkachukwu/PICKnSTRUM",
+        content:
+            "PicknStrum is an eCommerce site for stringed instruments and accessories, built to offer customers a smooth, secure, and user-friendly shopping experience.",
+        image: pickNStrumImage,
+        borderColor: "border-[#F2F2F2] dark:border-[#0C0C0D]",
+    },
+    {
         id: 7,
         title: "Medplus Pharmacy",
         programs: ["HTML-5", "Python", "JavaScript"],
@@ -116,14 +109,22 @@ const textData = [
     },
     {
         id: 8,
-        title: "ABC Real Estate",
-        programs: ["HTML-5", "CSS-3", "JavaScript", "PHP", "Bootstrap, MYSQL"],
-        link: "https://your-abc-realestate-live-link.com",
-        github: "https://github.com/SamuelUkachukwu/abc-realestate",
+        title: "storyBASE",
+        programs: [
+            "HTML-5",
+            "CSS-3",
+            "Python",
+            "JavaScript",
+            "Django",
+            "Bootstrap",
+        ],
+        link: "https://storybase.onrender.com",
+        github: "https://github.com/SamuelUkachukwu/storyBase",
         content:
-            "ABC Real Estate is a sleek, responsive site that showcases properties with filtering, testimonials, and intuitive navigation for clients across Ireland.",
-        image: abcRealEstateImage,
-        borderColor: "border-[#D9D9D9] dark:border-[#2A2A2A]",
+            "StoryBase is a blogging platform for storytellers to share original works in admin-defined categories. Registered users can post and engage with creative content.",
+        image: storyBaseImage,
+        borderColor: "border-[#F2F2F2] dark:border-[#0C0C0D]",
+
     },
 ];
 
